@@ -11,129 +11,345 @@
     <!-- Header -->
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <h1>NhanLee Shop</h1>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#" class="active">Trang chủ</a></li>
-                    <li><a href="#">Nam</a></li>
-                    <li><a href="#">Nữ</a></li>
-                    <li><a href="#">Trẻ em</a></li>
-                    <li><a href="#">Khuyến mãi</a></li>
-                </ul>
-            </div>
-            <div class="nav-buttons">
-                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
-                <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i></a>
-                <a href="login.html" class="user-btn"><i class="fas fa-user"></i></a>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="/">
+                        <h1>NhanLee<span>Shop</span></h1>
+                    </a>
+                </div>
+
+                <div class="nav-center">
+                    <ul class="menu">
+                        <li><a href="#" class="active">Trang chủ</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nam <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-grid">
+                                    <div class="dropdown-section">
+                                        <h3>Áo</h3>
+                                        <ul>
+                                            <li><a href="#">Áo thun</a></li>
+                                            <li><a href="#">Áo sơ mi</a></li>
+                                            <li><a href="#">Áo khoác</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h3>Quần</h3>
+                                        <ul>
+                                            <li><a href="#">Quần jean</a></li>
+                                            <li><a href="#">Quần tây</a></li>
+                                            <li><a href="#">Quần short</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h3>Phụ kiện</h3>
+                                        <ul>
+                                            <li><a href="#">Thắt lưng</a></li>
+                                            <li><a href="#">Ví</a></li>
+                                            <li><a href="#">Giày</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Nữ <i class="fas fa-chevron-down"></i></a>
+                            <!-- Tương tự dropdown Nam -->
+                        </li>
+                        <li><a href="#">Trẻ em</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="nav-buttons">
+                        <a href="#" class="wishlist-btn" title="Yêu thích">
+                            <i class="far fa-heart"></i>
+                            <span class="badge">0</span>
+                        </a>
+                        <a href="#" class="cart-btn" title="Giỏ hàng">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge">0</span>
+                        </a>
+                        <a href="login.html" class="user-btn" title="Tài khoản">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Xu hướng thời trang 2025</h2>
-            <p>Khám phá bộ sưu tập mới nhất với những thiết kế độc đáo</p>
-            <a href="#" class="cta-button">Mua sắm ngay</a>
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>Bộ sưu tập mới 2024</h2>
+                    <p>Khám phá xu hướng thời trang mới nhất</p>
+                    <a href="#" class="btn primary">Mua sắm ngay</a>
+                </div>
+                <img src="img/hero1.jpg" alt="Hero 1">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Giảm giá mùa hè</h2>
+                    <p>Ưu đãi lên đến 50% cho tất cả sản phẩm</p>
+                    <a href="#" class="btn primary">Xem ngay</a>
+                </div>
+                <img src="img/hero2.jpg" alt="Hero 2">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Miễn phí vận chuyển</h3>
+                    <p>Cho đơn hàng từ 500K</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Đổi trả miễn phí</h3>
+                    <p>Trong vòng 30 ngày</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Tư vấn nhiệt tình</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Thanh toán an toàn</h3>
+                    <p>Bảo mật thông tin</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Categories -->
     <section class="categories">
-        <h2 class="section-title">Danh mục sản phẩm</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="img/jack.jpg" alt="Thời trang nam">
-                <h3>Nam</h3>
-                <a href="#" class="category-link">Xem thêm</a>
-            </div>
-            <div class="category-card">
-                <img src="img/women.jpg" alt="Thời trang nữ">
-                <h3>Nữ</h3>
-                <a href="#" class="category-link">Xem thêm</a>
-            </div>
-            <div class="category-card">
-                <img src="img/kids.jpg" alt="Thời trang trẻ em">
-                <h3>Trẻ em</h3>
-                <a href="#" class="category-link">Xem thêm</a>
+        <div class="container">
+            <h2 class="section-title">Danh mục nổi bật</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card large">
+                    <img src="img/men.jpg" alt="Thời trang nam">
+                    <div class="category-content">
+                        <h3>Nam</h3>
+                        <p>Xem bộ sưu tập</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="img/women.jpg" alt="Thời trang nữ">
+                    <div class="category-content">
+                        <h3>Nữ</h3>
+                        <p>Xem bộ sưu tập</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="img/kids.jpg" alt="Thời trang trẻ em">
+                    <div class="category-content">
+                        <h3>Trẻ em</h3>
+                        <p>Xem bộ sưu tập</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="img/accessories.jpg" alt="Phụ kiện">
+                    <div class="category-content">
+                        <h3>Phụ kiện</h3>
+                        <p>Xem bộ sưu tập</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="featured-products">
-        <h2 class="section-title">Sản phẩm nổi bật</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/somi.jpg" alt="Sản phẩm 1">
-                    <div class="product-overlay">
-                        <a href="#" class="quick-view">Xem nhanh</a>
+    <!-- New Arrivals -->
+    <section class="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sản phẩm mới</h2>
+                <div class="section-nav">
+                    <button class="active">Tất cả</button>
+                    <button>Nam</button>
+                    <button>Nữ</button>
+                    <button>Trẻ em</button>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-thumb">
+                        <img src="img/product1.jpg" alt="Product 1">
+                        <div class="product-actions">
+                            <button class="action-btn" title="Yêu thích">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn" title="Xem nhanh">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Thêm vào giỏ">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="#">Áo sơ mi nam dài tay</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current">499.000đ</span>
+                            <span class="original">699.000đ</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(12)</span>
+                        </div>
                     </div>
                 </div>
-                <div class="product-info">
-                    <h3>Áo sơ mi</h3>
-                    <p class="price">1 tỷ</p>
-                    <button class="add-to-cart">Thêm vào giỏ</button>
-                </div>
+                <!-- Thêm các product card khác tương tự -->
             </div>
-            <!-- Thêm các product-card khác tương tự -->
+            
+            <div class="section-footer">
+                <a href="#" class="btn outline">Xem tất cả</a>
+            </div>
         </div>
     </section>
 
-    <!-- Special Offer -->
-    <section class="special-offer">
-        <div class="offer-content">
-            <h2>Ưu đãi đặc biệt</h2>
-            <p>Giảm giá lên đến 50% cho tất cả sản phẩm mới</p>
-            <a href="#" class="offer-button">Xem ngay</a>
+    <!-- Sale Banner -->
+    <section class="sale-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Giảm giá mùa hè</h2>
+                <p>Ưu đãi lên đến 50% cho tất cả sản phẩm</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="number">02</span>
+                        <span class="text">Ngày</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="number">12</span>
+                        <span class="text">Giờ</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="number">45</span>
+                        <span class="text">Phút</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="number">30</span>
+                        <span class="text">Giây</span>
+                    </div>
+                </div>
+                <a href="#" class="btn primary">Mua ngay</a>
+            </div>
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="newsletter-content">
-            <h2>Đăng ký nhận tin</h2>
-            <p>Nhận thông tin về sản phẩm mới và ưu đãi đặc biệt</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Nhập email của bạn">
-                <button type="submit">Đăng ký</button>
-            </form>
+    <!-- Instagram Feed -->
+    <section class="instagram">
+        <div class="container">
+            <h2 class="section-title">@NhanLeeShop trên Instagram</h2>
+            <div class="instagram-grid">
+                <a href="#" class="instagram-item">
+                    <img src="img/insta1.jpg" alt="Instagram 1">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <!-- Thêm các instagram item khác -->
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Về chúng tôi</h3>
-                <p>Fashion Shop - Thời trang cao cấp cho mọi lứa tuổi</p>
-            </div>
-            <div class="footer-section">
-                <h3>Liên kết</h3>
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Liên hệ</h3>
-                <p>Email: info@fashionshop.com</p>
-                <p>Phone: 0123 456 789</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>Về NhanLee Shop</h3>
+                        <p>Thời trang cao cấp dành cho giới trẻ</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Liên kết nhanh</h3>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Hỗ trợ</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Liên hệ</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Đường ABC, Quận XYZ, TP.HCM</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>0123 456 789</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@nhanleeshop.com</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2024 Fashion Shop. All rights reserved.</p>
+            <div class="container">
+                <p>&copy; 2024 NhanLee Shop. Tất cả quyền được bảo lưu.</p>
+                <div class="payment-methods">
+                    <img src="img/payment-visa.png" alt="Visa">
+                    <img src="img/payment-mastercard.png" alt="Mastercard">
+                    <img src="img/payment-paypal.png" alt="PayPal">
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html> 
