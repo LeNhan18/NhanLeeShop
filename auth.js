@@ -112,6 +112,20 @@ function hashPassword(password) {
 document.addEventListener('DOMContentLoaded', function() {
     initializeDefaultUser();
     
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const container = document.querySelector(".container");
+    
+    // Thêm sự kiện click cho nút đăng ký
+    sign_up_btn.addEventListener("click", () => {
+        container.classList.add("sign-up-mode");
+    });
+    
+    // Thêm sự kiện click cho nút đăng nhập
+    sign_in_btn.addEventListener("click", () => {
+        container.classList.remove("sign-up-mode");
+    });
+
     const loginForm = document.getElementById('loginForm');
     const registerForm = document.getElementById('registerForm');
 

@@ -454,11 +454,37 @@ form.sign-in-form {
 
 /* Thêm hiệu ứng 3D khi chuyển đổi form */
 .container.sign-up-mode {
-    transform: rotateY(-10deg);
+    transform: none;
 }
 
 .container.sign-up-mode .signin-signup {
-    transform: translate(-50%, -50%) rotateY(10deg);
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.container.sign-up-mode form.sign-in-form {
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.container.sign-up-mode form.sign-up-form {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.container.sign-up-mode .right-panel .content,
+.container.sign-up-mode .right-panel .image {
+    transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel {
+    pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+    pointer-events: all;
 }
 
 /* Hiệu ứng gradient động nổi bật hơn */
