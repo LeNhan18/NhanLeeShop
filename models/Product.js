@@ -78,6 +78,5 @@ productSchema.pre('save', function(next) {
   this.slug = this.name.toLowerCase().replace(/ /g, '-');
   next();
 });
-
 const Product = mongoose.model('Product', productSchema);
 module.exports = Product; 

@@ -195,6 +195,7 @@ header {
     position: relative;
     height: 600px;
     overflow: hidden;
+    color: #333;
 }
 
 .hero-slider {
